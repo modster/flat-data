@@ -21,3 +21,13 @@ jobs:
         with:
           http_url: https://data-api.binance.vision/api/v3/uiKlines?symbol=ETHBTC&interval=1m&limit=60
           downloaded_filename: etbtc.js
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://data-api.binance.vision/api/v3/uiKlines?symbol=BTCUSDT&interval=1m&limit=60
+          downloaded_filename: btcusdt.js
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: ethusdt.json
+          downloaded_filename: https://data-api.binance.vision/api/v3/uiKlines?symbol=ETHUSDT&interval=1m&limit=60

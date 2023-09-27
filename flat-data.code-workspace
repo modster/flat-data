@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"github-actions.workflows.pinned.workflows": [
+			".github/workflows/flat.yml"
+		],
+		"bookmarks.useWorkaroundForFormatters": true,
+		"svelte.plugin.svelte.format.config.singleQuote": true,
+		"deno.lint": true,
+		"deno.unstable": true
+	}
+}

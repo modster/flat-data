@@ -1,11 +1,11 @@
-## ethbtc 1m
+# ethbtc 1m
 
 [data-api.binance.vision/api/v3/uiKlines?symbol=ETHBTC&interval=1m&limit=60](https://data-api.binance.vision/api/v3/uiKlines?symbol=ETHBTC&interval=1m&limit=60)
 
 sample:
 
 ```js
-[
+;[
   [
     1695650580000,
     "0.06023000",
@@ -35,5 +35,4 @@ sample:
     "0",
   ],
 ]
- 
 ```

@@ -1,7 +1,7 @@
 name: data
 on:
   schedule:
-    - cron: 0 * * * *
+    - cron: "*/5 * * * *"
   workflow_dispatch: {}
   push:
     paths:
@@ -20,14 +20,14 @@ jobs:
         uses: githubocto/flat@v3.4.0
         with:
           http_url: data-api.binance.vision/api/v3/uiKlines?symbol=ETHBTC&interval=1m&limit=60
-          downloaded_filename: etbtc.js
+          downloaded_filename: ethbtc.txt
       - name: Flat Data
         uses: githubocto/flat@v3.4.0
         with:
           http_url: data-api.binance.vision/api/v3/uiKlines?symbol=BTCUSDT&interval=1m&limit=60
-          downloaded_filename: btcusdt.js
+          downloaded_filename: btcusdt.txt
       - name: Flat Data
         uses: githubocto/flat@v3.4.0
         with:
-          http_url: data-api.binance.vision/api/v3/uiKlines?symbol=ETHUSDT&interval=1m&limit=60
-          downloaded_filename: ethusdt.json
+          http_url: data-api.binance.vision/api/v3/uiKlines?symbol=ETHUSDT&interval=1m&limit=5
+          downloaded_filename: ethusdt.txt

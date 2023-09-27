@@ -1,3 +1,9 @@
 {
-  "github-actions.workflows.pinned.workflows": [".github/workflows/flat.yml"]
+  "github-actions.workflows.pinned.workflows": [".github/workflows/flat.yml"],
+  "prettier.singleAttributePerLine": true,
+  "bookmarks.useWorkaroundForFormatters": true,
+  "svelte.plugin.svelte.format.config.singleQuote": true,
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true
 }
